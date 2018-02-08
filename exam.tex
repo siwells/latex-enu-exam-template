@@ -1,0 +1,154 @@
+\documentclass[11pt, a4paper, twosize]{article}
+\usepackage[
+	a4paper,
+	outer=3cm,
+	inner=3cm,
+	top=2cm,
+	bottom=2cm
+]{geometry}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{algorithmicx}
+\usepackage{enumitem}
+
+
+\lstset{
+  language=Java,                
+  basicstyle=\footnotesize\ttfamily,
+  numbers=left,                   
+  stepnumber=1,                   
+  numbersep=5pt,                  
+  showspaces=false,               
+  showstringspaces=false,         
+  showtabs=false,                 
+  frame=single,                   
+  tabsize=2,                      
+  captionpos=b,                   
+  breaklines=true,                
+  breakatwhitespace=false,
+  columns=fixed,
+  extendedchars=true,
+  frame=single,
+}
+
+\setenumerate[0]{label=\alph*)}
+\renewcommand{\thesection}{Question \arabic{section}}
+
+\newcommand{\blank}[1]{\hspace*{#1}}
+
+\newcommand*{\inputline}[1][3em]{\rule[0.5ex]{#1}{0.55pt}}
+
+\begin{document}
+\begin{titlepage}
+\vspace*{1cm}
+
+\textsc{Matric No:} \inputline[10em]
+
+\begin{center}
+
+\textsc{\Large {\bf{EDINBURGH NAPIER UNIVERSITY}}}\\[0.5cm]
+\textsc{\Large {\bf{SCHOOL OF COMPUTING}}}\\[1.5cm]
+
+
+\textsc{\Large {\bf{MODULE NAME}}}\\[1cm]
+\textsc{\Large {\bf{MODULE CODE}}}\\[1.5cm]
+
+\end{center}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lllll}
+Academic Session         & \textbf{2017-18} &  \blank{2cm} & Diet:& \textbf{First}   \\
+     & & & \\
+Exam duration:           & \textbf{2 hours} &  & Reading time;    & \textbf{None}    \\
+     & & & \\
+(excluding reading time) &                  &  & Total exam time: & \textbf{2 hours}
+\end{tabular}
+\end{table}
+
+\vspace{2cm}
+\textsc{{\bf{Please read full instructions before commencing writing}}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{14cm}|}
+\hline
+
+{\bf{Exam paper information}}\\
+
+    \begin{itemize}
+      \item Number of pages (including front cover): {\bf{TWO}}
+      \item Number of questions: {\bf{FIVE}}
+      \item {\bf{ONE}} section - answer any {\bf{THREE}} questions
+    \end{itemize} \\
+
+\hline
+{\bf{Special instructions}}\\
+
+    \begin{itemize}
+      \item Exam paper to be returned to examiner
+    \end{itemize} \\
+
+\hline
+{\bf{Special items}}\\ 
+
+    \begin{itemize}
+      \item None
+    \end{itemize} \\
+
+\hline
+\end{tabular}
+\end{table}
+
+\textsc{\Large {\bf{Examiner(s):}} EXAMINER'S NAME}
+
+\end{titlepage}
+
+
+\section{}
+\begin{enumerate}
+\item blah\\
+\hspace*{\fill} (XX marks)
+\item blah blah\\
+\hspace*{\fill} (XX marks)
+\end{enumerate}
+\hspace*{\fill} {\bf{(Total XX marks)}}
+
+
+\section{}
+\begin{enumerate}
+\item blah\\
+
+    \begin{enumerate}[label=\roman*.]
+
+    \item blah\\
+    \hspace*{\fill} (XX marks)
+
+    \item blah\\
+    \hspace*{\fill} (XX marks)
+
+    \end{enumerate}
+
+\item blah\\
+    \hspace*{\fill} (XX marks)
+\end{enumerate}
+\hspace*{\fill} {\bf{(Total XX marks)}}
+
+
+
+\vspace*{2.5cm}
+\centerline{{\bf{END OF PAPER}}}
+
+
+\end{document}
+
+%\begin{lstlisting}
+%
+%\end{lstlisting}
+
