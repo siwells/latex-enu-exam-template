@@ -1,15 +1,9 @@
-\documentclass[12pt, a4paper, twosize]{article}
-\usepackage[
-	a4paper,
-	outer=3cm,
-	inner=3cm,
-	top=2cm,
-	bottom=2cm
-]{geometry}
+% Toggle between the two documentclass declarations to generation PDF with/without solutions
+\documentclass[12pt, a4paper]{exam}
+%\documentclass[12pt, a4paper, answers]{exam}
 
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-
+\usepackage[a4paper, margin = 2.2cm]{geometry}
+\usepackage{helvet} \renewcommand{\familydefault}{\sfdefault}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{float}
@@ -39,13 +33,16 @@
 
 \setenumerate[0]{label=\alph*)}
 \renewcommand{\thesection}{Question \arabic{section}}
-
 \newcommand{\blank}[1]{\hspace*{#1}}
-
 \newcommand*{\inputline}[1][3em]{\rule[0.5ex]{#1}{0.55pt}}
 
 \begin{document}
-
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% START: COVER PAGE
+%%%
+%%%%%%%%%%%%%%%%%%%%%
 
 \begin{titlepage}
 \vspace*{1cm}
@@ -57,20 +54,18 @@
 \noindent \textsc{\Large {\bf{Edinburgh Napier University}}}\\[0.5cm]
 \textsc{\Large {\bf{School of Computing}}}\\[1.5cm]
 
-
-\noindent \textsc{\Large {\bf{MODULE NAME}}}\\[1cm]
-\textsc{\Large {\bf{SET000000}}}\\[1.5cm]
+\noindent \textsc{\Large {\bf{MODULE NAME}}}\\[1cm] % EDIT MODULE NAME
+\textsc{\Large {\bf{SET000000}}}\\[1.5cm]           % EDIT MODULE CODE
 
 \vspace{-1cm}
-
 \begin{table}[H]
 \centering
 \begin{tabular}{ll}
-\textbf{Academic Session}                           & 2019-20 \\ 
- \textbf{Diet}                                      & Trimester 2 April\textbackslash May diet  \\
-\textbf{Exam duration (excluding reading time)}     & 2 hours\\
- \textbf{Reading time}                              & 10 minutes \\
- \textbf{Total exam time}                           & 2 hours 10 minutes
+\textbf{Academic Session}                           & 2019-20 \\ % EDIT SESSION
+ \textbf{Diet}                                      & Trimester 2 April\textbackslash May diet  \\ % EDIT DIET
+\textbf{Exam duration (excluding reading time)}     & 2 hours\\ % EDIT LENGTH
+ \textbf{Reading time}                              & 10 minutes \\ % EDIT READING TIME
+ \textbf{Total exam time}                           & 2 hours 10 minutes % EDIT TOTAL LENGTH
 \end{tabular}
 \end{table}
 
@@ -85,9 +80,9 @@
 {\bf{Exam paper information}}\\
 
     \begin{itemize}
-      \item Number of pages (including front cover): {\bf{NUM PAGES}}
-      \item Number of questions: {\bf{FOUR}}
-      \item Answer all {\bf{FOUR}} questions
+      \item Number of pages (including front cover): {\bf{ NUMPAGES}} % EDIT NUMPAGES
+      \item Number of questions: {\bf{ NUMQUESTIONS}} % EDIT NUM QUESTIONS
+      \item Answer all {\bf{ NUMQUESTIONS}} questions % EDIT NUM QUESTIONS
     \end{itemize} \\
 
 
@@ -111,14 +106,35 @@
 \textsc{\Large {\bf{Examiner(s):}} }
 
 \end{titlepage}
+%%%%%%%%%%%%%%%%%%%
+%%%
+%%% END: COVER PAGE
+%%%
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 
-
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%
+%%% QUESTIONS
+%%%
+%%%%%%%%%%%%%
+%%%
+%%% Each questions starts with a \section
+%%% Each part of a question is in an enumeration environment
+%%% Each sub-part of a question is in an enumeration environment embedded within the above enumeration
+%%%%%%%%%%%%%
 \section{}
 \begin{enumerate}
+
 \item blah\\
 \hspace*{\fill} (XX marks)
+\begin{solution}blah blah blah\end{solution}
+
 \item blah blah\\
 \hspace*{\fill} (XX marks)
+\begin{solution}blah blah blah\end{solution}
+
 \end{enumerate}
 \hspace*{\fill} {\bf{(Total XX marks)}}
 
@@ -131,14 +147,18 @@
 
     \item blah\\
     \hspace*{\fill} (XX marks)
+    \begin{solution}blah blah blah\end{solution}
 
     \item blah\\
     \hspace*{\fill} (XX marks)
+    \begin{solution}blah blah blah\end{solution}
 
     \end{enumerate}
 
 \item blah\\
     \hspace*{\fill} (XX marks)
+    \begin{solution}blah blah blah\end{solution}
+
 \end{enumerate}
 \hspace*{\fill} {\bf{(Total XX marks)}}
 
